@@ -1,0 +1,443 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hallo",
+        "hai",
+        "halo",
+        "hei",
+        "hi",
+        "hy",
+        "pagi",
+        "morning",
+        "siang",
+        "afternoon",
+        "sore",
+        "malam",
+        "bro",
+        "sis",
+        "kawan"
+      ],
+      "responses": [
+        "Hai! SmartKonstituen di sini. Mau tau informasi tentang apa nih?",
+        "Halo! Saya SmartKonstituen, salam kenal ya! Mau tau tentang pemilu, kan?",
+        "Helo! Ini SmartKonstituen. Lagi kepo tentang pemliu ya?"
+      ],
+       "context": [""]
+    },
+    {
+      "tag": "noanswer",
+      "patterns": [""],
+      "responses": ["Maaf, saya tidak dapat memahami pertanyaan anda. Apa yang ingin anda tanyakan tentang pemilu?", 
+       "Maaf, untuk saat ini saya ini belum dapat menjawab pertanyaan kamu."],
+      "context": [""]
+    },
+    {
+      "tag": "SmartKonstituen",
+      "patterns": [
+        "Apa itu SmartKonstituen?",
+        "Siapa SmartKonstituen?"
+      ],
+      "responses": [
+        "SmartKonstituen adalah aplikasi chatbot informasi tentang Pemilu yang dimulai dari pelaksanaan, persyaratan dan informasi lainnya seputar Pemilu!",
+        "SmartKonstituen itu adalah teman informasi kamu tentang Pemilu!"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "pencipta_SmartKonstituen",
+      "patterns": [
+        "Siapa pembuatmu?",
+        "Yang buat kamu siapa sih?",
+        "Siapa penciptamu?"
+      ],
+      "responses": [
+        "SmartKonstituen diciptakan oleh mahasiswa dan mahasiswi dari program Kampus Merdeka yang memiliki ide kreatif dan semangat team yang luar biasa walaupun banyak rintangan dan drama tapi mereka berhasil menciptakan saya saat ini",
+        "Pembuat SmartKonstituen dari kalangan mahasiswa dan mahasiswi lho!",
+        "Penciptaku berasal dari seorang mahasiswa yang kreatif, sehingga saya bisa aktif saat ini!"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Dah",
+        "Dadah",
+        "Bye",
+        "Byee",
+        "Good bye",
+        "Selamat tinggal",
+        "Sampai jumpa",
+        "Bai",
+        "See you"
+      ],
+      "responses": [
+        "Bye!",
+        "Dadahh!",
+        "Good bye!",
+        "Dahh, semoga harimu menyenangkan yaa!",
+        "Sampai jumpa lagi!",
+        "See u! Senang bisa membantu"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "terimakasih",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "Terima kasih",
+        "Terimakasih",
+        "Makasih",
+        "Terima kasih banyak"
+      ],
+      "responses": [
+        "Dengan senang hati :)",
+        "Sama-sama yaa"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "pelaksanaan_pemilu",
+      "patterns": [
+        "Bagaimana pemilu dilaksanakan di negara kita?",
+        "Bagaimana pemilu dilaksanakan di negara kita",
+        "Bagaimana pemilu dilaksanakan",
+        "bagaimana pemilu dilaksanakan",
+        "pelaksanaan pemilu"
+      ],
+      "responses": [
+        "Pemilu dilaksanakan berdasarkan asas langsung, umum, bebas, rahasia, jujur, dan adil. Pemilu diselenggarakan untuk memilih anggota DPR, DPD, DPRD Provinsi, dan DPRD Kabupaten/Kota. Pemilu dilaksanakan setiap 5 (lima) tahun sekali pada hari libur atau hari yang diliburkan."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "tujuan_pemilu",
+      "patterns": [
+        "Apa tujuan Pemilu?",
+        "tujuan pemilu"
+      ],
+      "responses": [
+        "Tujuan pemilu untuk menyeleksi para pemimpin pemerintahan baik eskekutif maupun legislatif. Serta untuk membentuk pemerintahan yang demokratis, kuat dan memperoleh dukungan rakyat dalam rangka mewujudkan tujuan nasional sesuai UUD 1945."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "persyaratan_pemilu",
+      "patterns": [
+        "Apa persyaratan mengikuti Pemilu?",
+        "Apa saja syarat untuk menjadi pemilih?",
+        "Syarat-syarat untuk mengikuti pemilu",
+        "Syarat mengikuti pemilu"
+
+      ],
+      "responses": [
+        "Persyaratan untuk menjadi pemilih antara lain adalah Warga Negara Indonesia yang sudah berusia 17 tahun atau lebih pada saat pemungutan suara, belum pernah dijatuhi pidana penjara berdasarkan putusan pengadilan yang sudah mempunyai kekuatan hukum tetap, dan memiliki Kartu Tanda Penduduk (KTP) atau identitas resmi lainnya.",
+        "Syarat-syarat untuk menjadi pemilih antara lain adalah Warga Negara Indonesia yang sudah berusia 17 tahun atau lebih pada saat pemungutan suara, belum pernah dijatuhi pidana penjara berdasarkan putusan pengadilan yang sudah mempunyai kekuatan hukum tetap, dan memiliki Kartu Tanda Penduduk (KTP) atau identitas resmi lainnya."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "dilaksanakan_pemilu",
+      "patterns": [
+        "Kapan dilaksanakan pemilu?",
+        "Kapan pemilu diadakan?",
+        "Pemilu akan diadakan pada tanggal",
+        "Tanggal berapa pemilu?",
+        "Kapan pemilu?",
+        "Pemilu kapan?"
+      ],
+      "responses": [
+        "Pemilu akan diadakan pada tanggal 14 Febuari 2024"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "jumlah_pemilih",
+      "patterns": [
+        " Berapa jumlah pemilih yang terdaftar untuk Pemilu 2024?",
+        "jumlah pemilih yang terdaftar untuk Pemilu 2024"
+      ],
+      "responses": [
+        "Komisi Pemilihan Umum menetapkan daftar pemilih sementara atau DPS Pemilu 2024 sebanyak 205.835.518 pemilih. Jumlah ini lebih tinggi sekitar 6 persen dibandingkan dengan jumlah daftar pemilih tetap hasil perbaikan ketiga Pemilu 2019 yang tercatat 192.770.611."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "pencalonan_pemilu",
+      "patterns": [
+        "Bagaimana proses pemilihan calon presiden dan wakil presiden di partai politik terkait?"
+      ],
+      "responses": [
+        "Proses pencalonan Presiden dan Wakil Presiden dilakukan melalui kesepakatan tertulis Partai Politik atau Gabungan Partai Politik dalam pengusulan Pasangan Calon yang memiliki nuansa terwujudnya koalisi permanen guna mendukung terciptanya efektifitas pemerintahan"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "partai_baru",
+      "patterns": [
+        "Apakah ada partai politik baru yang muncul untuk Pemilu 2024??"
+      ],
+      "responses": [
+        "Ada 4 partai baru, yaitu:\n1. Partai Buruh\n2. Partai Gelora\n3. Partai Kebangkitan Nusantara (PKN)\n4. Partai Garuda"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "peran_kpu",
+      "patterns": [
+        "Apa peran Komisi Pemilihan Umum (KPU) dalam Pemilu?"
+      ],
+      "responses": [
+        "Komisi Pemilihan Umum (KPU) memiliki peran penting dalam penyelenggaraan Pemilu. Berikut adalah beberapa peran utama KPU dalam pemilu:\n1. Penyusunan Peraturan Pemilu: KPU bertanggung jawab menyusun peraturan pemilu, termasuk peraturan mengenai tahapan pemilu, jadwal, tata cara pencalonan, mekanisme pemungutan suara, dan proses penghitungan suara. Peraturan ini dirancang untuk memastikan adanya keadilan, transparansi, dan integritas dalam pemilu.\n2. Pendaftaran Pemilih: KPU bertanggung jawab untuk melakukan pendaftaran pemilih, baik dalam negeri maupun luar negeri. KPU mengelola daftar pemilih tetap dan menyusun mekanisme untuk memastikan bahwa pemilih yang memenuhi syarat dapat terdaftar secara akurat dan tepat waktu.\n3. Penetapan Daftar Calon: KPU menetapkan daftar calon peserta pemilu berdasarkan persyaratan yang ditetapkan. KPU memverifikasi kelengkapan dokumen pencalonan, memeriksa kelayakan calon, dan membuat keputusan mengenai calon yang memenuhi syarat untuk bertarung dalam pemilu.\n4. Pengawasan Pemilu: KPU memiliki tugas mengawasi jalannya pemilu, termasuk kampanye, penggunaan dana kampanye, pemungutan suara, dan penghitungan suara. KPU juga memiliki kewenangan untuk menangani pelanggaran pemilu dan mengambil tindakan yang diperlukan sesuai dengan hukum yang berlaku.\n5. Pengumuman Hasil Pemilu: Setelah proses pemungutan dan penghitungan suara selesai, KPU bertanggung jawab untuk mengumumkan hasil resmi pemilu. Hal ini mencakup pengumuman perolehan suara masing-masing partai politik, calon presiden, dan calon legislatif yang terpilih.\n6. Sosialisasi dan Edukasi Pemilih: KPU melakukan kegiatan sosialisasi dan edukasi kepada pemilih, baik mengenai prosedur pemilu, hak dan kewajiban pemilih, maupun informasi mengenai calon peserta pemilu. Tujuannya adalah meningkatkan partisipasi pemilih dan memastikan bahwa pemilih memiliki pemahaman yang memadai mengenai pemilu."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "Daftar_Pemilih_Tetap(DPT)",
+      "patterns": [
+        "Bagaimana cara cek kita sudah terdaftar di DPT?",
+        "cara cek dpt",
+        "Cara cek di DPT"
+      ],
+      "responses": [
+        "Berikut ini adalah langkah-langkah yang bisa Anda lakukan untuk mengecek sudah terdaftar atau belum:\n1. Kunjungi laman resmi KPU, atau klik tautan https://infopemilu.kpu.go.id/ \n2. Pilih “Cek DPT Online” atau\n3. Akses laman https://cekdptonline.kpu.go.id/ \n4. Akan muncul “Pencarian Data Pemilih”\n5. Masukkan data berupa\n- Kabupaten/kota sesuai KTP\n- Nomor Induk Kependudukan (NIK) yang berjumlah 16 digit\n6. Bisa juga melakukan pengecekan dengan memasukkan nama lengkap dan tanggal lahir\n7. Pastikan seluruh data diri yang tercantum sudah benar\n8. Klik “Pencarian”\n9. Jika sudah terdaftar, maka akan muncul nama dan TPU sesuai data yang telah dimasukkan\n10. Jika data tidak terdaftar, maka akan ada peringatan yang mengatakan, “Data yang Anda masukkan keliru/belum terdaftar!”"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "usia_untuk_memilih",
+      "patterns": [
+        "Apakah usia 17 tahun atau sudah memiliki KTP pasti bisa memilih?",
+        "usia untuk memilih",
+        "Apakah umur 17 tahun atau sudah memiliki KTP pasti bisa memilih?"
+      ],
+      "responses": [
+        "Eits, belum tentu. Pastikan anda sudah terdaftar di Daftar Pemilihan Tetap(DPT)."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "apa_itu_pemilu",
+      "patterns": [
+        "Apa itu pemilu?",
+        "Apa itu pemilu",
+        "apa itu pemilu",
+        "APA ITU PEMILU",
+        "pemilu adalah",
+        "pemilu adalah?",
+        "Pemilu adalah"
+      ],
+      "responses": [
+        "Pemilu adalah sarana pelaksanaan kedaulatan rakyat yang dilaksanakan secara langsung, umum, bebas, rahasia, jujur, dan adil dalam Negara Kesatuan Indonesia berdasarkan Pancasila dan Undang-undang Dasar Negara Republik Indonesia 1945. Dengan kata lain, pemilu merupakan sarana bagi rakyat untuk menjalankan kedaulatan dan merupakan lembaga demokrasi."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "pentingnya_pemilu",
+      "patterns": [
+        "Mengapa pemilu penting?",
+        "Mengapa pemilu penting bagi masyarakat Indonesia?",
+        "Mengapa pemilu penting bagi masyarakat Indonesia",
+        "Mengapa pemilu penting bagi masyarakat Indonesia? Jelaskan dengan singkat",
+        "Mengapa pemilu penting bagi masyarakat Indonesia? Jelaskan secara singkat",
+        "Mengapa pemilu penting bagi masyarakat Indonesia? Jelaskan dengan lengkap",
+        "Mengapa pemilu penting bagi masyarakat Indonesia? Jelaskan secara lengkap"
+      ],
+      "responses": [
+        "Pemilu penting bagi masyarakat Indonesia karena memberikan kesempatan untuk memilih pemimpin dan perwakilan, memberdayakan masyarakat, melegitimasi kekuasaan, membangun demokrasi, dan mendorong akuntabilitas pemerintah.",
+        "Pemilu penting bagi masyarakat Indonesia karena alasan berikut:\n1. Penentuan Pemimpin dan Perwakilan: Melalui pemilu, masyarakat Indonesia memiliki kesempatan untuk memilih pemimpin negara, seperti Presiden, anggota parlemen, dan pejabat publik. Pemilu memungkinkan warga negara untuk memilih perwakilan mereka yang dianggap paling mampu mewakili kepentingan dan aspirasi mereka dalam pemerintahan.\n2.  Pemberdayaan Masyarakat: Pemilu memberikan hak politik kepada setiap warga negara Indonesia untuk ikut serta dalam pengambilan keputusan politik. Ini mendorong partisipasi aktif dan kesadaran politik masyarakat, yang penting dalam proses demokrasi.\n3. Legitimasi Kekuasaan: Pemilu merupakan mekanisme yang penting dalam memastikan keabsahan dan legitimasi pemerintahan. Dengan melibatkan masyarakat dalam proses pemilihan, pemimpin dan perwakilan yang terpilih mendapatkan mandat dari rakyat, sehingga memperkuat legitimasi kekuasaan mereka.\n4. Pembangunan Demokrasi: Pemilu merupakan pijakan utama dalam membangun dan memperkuat demokrasi di Indonesia. Pemilu yang bebas, adil, dan transparan mendorong pertumbuhan demokrasi, melibatkan berbagai kelompok dan pendapat dalam pengambilan keputusan politik, dan membangun institusi-institusi yang kuat.\n5. Akuntabilitas Pemerintah: Pemilu memberikan kesempatan bagi masyarakat untuk mengevaluasi kinerja pemerintah dan mengungkapkan keinginan mereka. Pemimpin dan perwakilan yang dipilih melalui pemilu harus bertanggung jawab kepada pemilih, dan pemilu secara teratur memberikan mekanisme untuk mengoreksi atau mengubah arah kebijakan pemerintah"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "siapa_yang_berhak_memilih",
+      "patterns": [
+        "Siapa yang berhak untuk memilih dalam pemilu?",
+        "Siapa yang boleh memilih",
+        "Siapa yg boleh memilih"
+      ],
+      "responses": [
+        "Warga Negara Indonesia yang pada hari pemungutan suara sudah genap berumur 17 (tujuh belas) tahun atau lebih, sudah kawin, atau sudah pernah kawin mempunyai hak memilih. 2. Warga Negara Indonesia sebagaimana dimaksud pada ayat (1) didaftar 1 (satu) kali oleh Penyelenggara Pemilu dalam daftar Pemilih."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "cara_mendaftar_sebagai_pemilih",
+      "patterns": [
+        "Bagaimana cara mendaftar sebagai pemilih dalam pemilu?"
+      ],
+      "responses": [
+        "Untuk mendaftar sebagai pemilih dalam pemilu di Indonesia, Anda dapat mengikuti langkah-langkah berikut:\n1. Memenuhi Syarat:\n- Warga Negara Indonesia (WNI) yang telah berusia 17 tahun atau lebih pada saat pemilihan.\n- Tidak sedang dalam status pengampunan atau sedang menjalani hukuman pidana.\n- Tidak sedang dinyatakan tidak berhak memilih berdasarkan putusan pengadilan.\n2. Pendaftaran secara Langsung:\n- Kunjungi kantor Kecamatan atau Kantor Kelurahan tempat Anda tinggal.\n- Minta formulir pendaftaran pemilih (Formulir Model A.1).\n- Isi formulir dengan lengkap dan benar, sesuai dengan data pribadi Anda.\n- Sertakan fotokopi Kartu Keluarga (KK) atau Surat Keterangan Pindah (jika baru pindah domisili).\n - Serahkan formulir pendaftaran dan dokumen pendukung kepada petugas yang bertugas.\n3. Pendaftaran secara Online:\n- Kunjungi website resmi Komisi Pemilihan Umum (KPU) di https://www.kpu.go.id/ \n- Cari informasi terkait pendaftaran pemilih online.\n- Ikuti petunjuk yang diberikan untuk mengisi formulir pendaftaran secara online.\n- Isi data pribadi dengan lengkap dan benar sesuai permintaan.\n- Unggah foto atau scan dokumen pendukung yang diminta, seperti Kartu Keluarga (KK) atau Surat Keterangan Pindah.\n- Kirim formulir pendaftaran secara online melalui website yang disediakan.\n Setelah proses pendaftaran selesai, Anda akan mendapatkan bukti pendaftaran sebagai pemilih, seperti Surat Pemberitahuan Pendaftaran Pemilih (SPPP) atau Kartu Tanda Pemilih (KTP). Pastikan Anda menyimpan bukti tersebut dengan baik dan membawanya saat hari pemilihan untuk memberikan suara."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "penting_nya_dpt",
+      "patterns": [
+        "Pentingnya dpt",
+        "Kenapa DPT penting?",
+        "Apakah DPT penting?"
+      ],
+      "responses": [
+        "Tentu saja penting, karena DPT memiliki peran penting dalam menjaga integritas dan kredibilitas pemilihan umum, memastikan partisipasi yang adil, serta memfasilitasi penyelenggaraan pemilihan yang efektif dan efisien."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "penjelasan_dan_penting_nya_dpt",
+      "patterns": [
+        "Apa itu Daftar Pemilih Tetap (DPT) dan mengapa penting?",
+        "apa itu dpt dan kenapa penting"
+      ],
+      "responses": [
+        "DPT adalah daftar Pemilih sementara hasil perbaikan akhir yang telah diperbaiki oleh panitia pemungutan suara, direkapitulasi oleh panitia pemilihan kecamatan, dan ditetapkan oleh KPU Kabupaten/Kota dan direkapitulasi di tingkat provinsi dan nasional. Maka dari itu DPT memiliki peran penting dalam menjaga integritas dan kredibilitas pemilihan umum, memastikan partisipasi yang adil, serta memfasilitasi penyelenggaraan pemilihan yang efektif dan efisien."            
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "apa_itu_dpt",
+      "patterns": [
+        "apa itu dpt?",
+        "apa itu dpt",
+        "dpt adalah",
+        "Apa itu Daftar Pemilih Tetap (DPT)?"
+      ],
+      "responses": [
+        "DPT adalah daftar Pemilih sementara hasil perbaikan akhir yang telah diperbaiki oleh panitia pemungutan suara, direkapitulasi oleh panitia pemilihan kecamatan, dan ditetapkan oleh KPU Kabupaten/Kota dan direkapitulasi di tingkat provinsi dan nasional. Maka dari itu DPT memiliki peran penting dalam menjaga integritas dan kredibilitas pemilihan umum, memastikan partisipasi yang adil, serta memfasilitasi penyelenggaraan pemilihan yang efektif dan efisien."],
+        "context": [""]
+    },
+    {
+      "tag": "perbedaan_pemilu_legislatif_dan_pemilu_presiden?",
+      "patterns": [
+        "Apa bedanya pemilu legislatif, pemilu presiden dan pemilihan kepala daerah?",
+        "Apa bedanya pemilu legislatif dengan pemilu presiden?",
+        "Apa bedanya pileg dengan pilpres?"
+      ],
+      "responses": [
+        "Pemilu legislatif(Pileg) adalah sarana kedaulatan rakyat untuk memilih anggota Dewan Perwakilan Rakyat (DPR), anggota Dewan Perwakilan Daerah (DPD), dan anggota Dewan Perwakilan Rakyat Daerah (DPRD), yang dilaksanakan secara langsung, umum, bebas, rahasia, jujur, dan adil dalam NKRI berdasarkan Pancasila dan UUD 1945. Pileg dilaksanakan untuk memilih anggota legislatif di tingkat nasional, provinsi, dan kabupaten/kota.\n Pemilihan Umum atau Pemilu Presiden(Pilpres) adalah sarana kedaulatan rakyat untuk memilih Presiden dan Wakil Presiden, yang dilaksanakan secara langsung, umum, bebas, rahasia, jujur, dan adil dalam NKRI berdasarkan Pancasila dan UUD 1945. Pilpres dilaksanakan untuk memilih presiden dan wakil presiden Negara Kesatuan Republik Indonesia.\n Pemilihan Kepala Daerah(Pilkada) adalah sarana kedaulatan rakyat untuk memilih wakil rakyat di tingkat daerah atau pemilihan kepala daerah yakni pemilihan Gubernur dan Wakil Gubernur, Bupati dan Wakil Bupati, serta Wali Kota dan Wakil Wali Kota.",
+        "Perbedaan Pileg, Pilpres dan Pilkada dapat dipahami melalui pengertian, aturan dan sistem pelaksanaannya. Untuk Pileg dan Pilpres biasa dilaksanakan secara serentak dan disebut juga dengan Pemilu (Pemilihan Umum). Sementara Pilkada biasa juga disebut Pemilihan atau Pemilukada"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "pengertian_pileg",
+      "patterns": [
+        "Apa itu Pileg?",
+        "Apa itu pileg?",
+        "apa itu pileg?",
+        "apa itu pileg",
+        "Apa itu pemilihan legislatif?",
+        "apa itu pemilihan legislatif?",
+        "apa itu pemilihan legislatif",
+        "Pileg adalah",
+        "pileg adalah",
+        "pemilihan legislatif adalah"
+      ],
+      "responses": [
+        "Pemilu legislatif(Pileg) adalah sarana kedaulatan rakyat untuk memilih anggota Dewan Perwakilan Rakyat (DPR), anggota Dewan Perwakilan Daerah (DPD), dan anggota Dewan Perwakilan Rakyat Daerah (DPRD), yang dilaksanakan secara langsung, umum, bebas, rahasia, jujur, dan adil dalam NKRI berdasarkan Pancasila dan UUD 1945. Pileg dilaksanakan untuk memilih anggota legislatif di tingkat nasional, provinsi, dan kabupaten/kota. "
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "pengertian_pemilihan_presiden",
+      "patterns": [
+        "Apa itu Pilpres?",
+        "Apa itu pilpres?",
+        "apa itu pilpres?",
+        "apa itu pilpres",
+        "Apa itu pemilihan presiden?",
+        "apa itu pemilihan presiden?",
+        "apa itu pemilihan presiden",
+        "Pilpres adalah",
+        "pilpres adalah",
+        "pemilihan presiden adalah"
+      ],
+      "responses": [
+        "Pilpres atau pemilihan presdien adalah sarana kedaulatan rakyat untuk memilih Presiden dan Wakil Presiden, yang dilaksanakan secara langsung, umum, bebas, rahasia, jujur, dan adil dalam NKRI berdasarkan Pancasila dan UUD 1945."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "pemilihan_presiden",
+      "patterns": [
+        "Bagaimana pemilihan presiden Indonesia dilakukan?"
+      ],
+      "responses": [
+        "Pemilihan umum Presiden dan Wakil Presiden diselenggarakan secara demokratis dan beradab dengan partisipasi rakyat seluas-luasnya yang dilaksanakan berdasarkan asas langsung, umum, bebas, rahasia, jujur, dan adil."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "cara_memilih_calon_pemilu",
+      "patterns": [
+        "Bagaimana cara memilih calon dalam pemilu?",
+        "cara memilih calon pemilu"
+      ],
+      "responses": [
+        "Cara memilih calon dalam pemilu dapat dilakukan dengan langkah-langkah berikut:\n1.Memeriksa Daftar Pemilih Tetap (DPT):\n- Pastikan Anda terdaftar sebagai pemilih dalam Daftar Pemilih Tetap (DPT) yang disusun oleh Komisi Pemilihan Umum (KPU).\n- Periksa tempat dan nomor TPS (Tempat Pemungutan Suara) yang ditentukan untuk Anda.\n2 Datang ke Tempat Pemungutan Suara (TPS):\n- Pada hari pemilihan, datang ke TPS sesuai dengan tempat yang tertera pada kartu pemilih atau informasi DPT.\n- Bawa kartu tanda pemilih (KTP) atau identitas resmi lainnya yang sah.\n3 Antri dan Mendaftar:\n- Antri di TPS dan ikuti petunjuk petugas pemilihan.\n- Saat giliran Anda, serahkan KTP atau identitas resmi lainnya kepada petugas untuk diverifikasi.\n4 Mendapatkan Surat Suara:\n- Setelah identitas Anda terverifikasi, petugas akan memberikan surat suara yang berisi daftar calon yang bersaing dalam pemilihan.\n- Pastikan surat suara yang diberikan adalah surat suara yang sah dan tidak rusak.\n5 Memilih Calon:\n- Masuk ke bilik suara untuk menjaga kerahasiaan pilihan Anda.\n- Pilih calon yang Anda dukung dengan cara memberikan tanda atau centang pada calon yang diinginkan di surat suara.\n6 Melipat dan Mencoblos Surat Suara:\n- Setelah memilih calon, lipat surat suara dengan rapi dan masukkan ke dalam kotak suara yang disediakan.\n7 Keluar dari TPS:\n- Keluar dari TPS dan selesaikan proses pemilihan Anda.\n-Pastikan Anda tidak membawa pulang surat suara atau melanggar aturan pemilihan lainnya.\n Penting untuk mematuhi aturan dan petunjuk yang diberikan oleh petugas pemilihan saat Anda berada di TPS."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "cara_memastikan_pemilu",
+      "patterns": [
+        "Bagaimana cara memastikan pemilu berjalan adil dan jujur?",
+        "cara memastikan pemilu berjalan adil dan jujur"
+      ],
+      "responses": [
+        "Untuk memastikan pemilu berjalan adil dan jujur, beberapa langkah yang dapat diambil adalah:\n1 Transparansi: Memastikan adanya transparansi dalam seluruh proses pemilu, termasuk dalam penyusunan Daftar Pemilih Tetap (DPT), pemilihan calon, kampanye, dan penghitungan suara. Informasi yang jelas dan mudah diakses harus disediakan kepada publik.\n2 Independensi Lembaga Pemilu: Mempastikan lembaga pemilu, seperti Komisi Pemilihan Umum (KPU), memiliki independensi dan tidak dipengaruhi oleh kepentingan politik atau pihak tertentu. Lembaga pemilu harus beroperasi secara netral dan profesional.\n3 Pengawasan Publik: Mendorong partisipasi aktif masyarakat dalam pengawasan pemilu. Masyarakat dapat melaporkan pelanggaran atau ketidakberesan yang terjadi selama pemilu. Keberadaan pengamat independen dan media yang bebas juga penting dalam mengawasi jalannya pemilu.\n4 Penegakan Hukum: Memastikan adanya penegakan hukum yang tegas terhadap pelanggaran pemilu. Tindakan curang, seperti politik uang, pemalsuan surat suara, intimidasi pemilih, atau kecurangan lainnya harus ditindak secara adil dan cepat oleh aparat penegak hukum.\n5 Edukasi Pemilih: Melakukan edukasi kepada pemilih tentang pentingnya pemilu, prosedur pemilihan, dan hak-hak pemilih. Pemilih harus memiliki pemahaman yang cukup untuk dapat berpartisipasi secara cerdas dan berdasarkan informasi yang benar.\n6 Sistem Keamanan dan Teknologi: Menggunakan teknologi dan sistem keamanan yang andal untuk mencegah manipulasi atau serangan terhadap data pemilu. Keamanan dalam sistem penghitungan suara dan pemrosesan data harus menjadi prioritas."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "pelangaran_pemilu",
+      "patterns": [
+        "Apa yang terjadi jika ada pelanggaran dalam pemilu?"
+      ],
+      "responses": [
+        "Berdasarkan Undang-Undang Nomor 7 Tahun 2017 tentang Pemilihan Umum, terdapat 3 (tiga) jenis pelanggaran pemilu, yaitu pelanggaran kode etik, pelanggaran administratif dan tindak pidana pemilu. Pelanggaran kode etik adalah pelanggaran etika penyelenggara pemilu terhadap sumpah dan janji sebelum menjalankan tugas sebagai penyelenggara pemilu. Pelanggaran kode etik ditangani oleh Dewan Kehormatan Penyelenggara Pemilu (DKPP) dan putusannya berupa sanksi teguran tertulis, pemberhentian sementara, pemberhentian tetap atau rehabilitasi.\n Pelanggaran administratif adalah pelanggaran terhadap tata cara, prosedur atau mekanisme yang berkaitan dengan administrasi pelaksanaan tahapan pemilu. Pelanggaran administratif pemilu ditangani oleh Bawaslu dan putusannya berupa perbaikan administrasi terhadap tata cara, prosedur atau mekanisme sesuai peraturan perundang-undangan, teguran tertulis, tidak diikutkan pada tahapan tertentu dalam penyelenggaraan pemilu atau sanksi administratif lainnya sesuai undang-undang pemilu.\n Pelanggaran tindak pidana pemilu adalah tindak pidana pelanggaran dan/atau kejahatan terhadap ketentuan tindak pidana pemilu sebagaimana diatur dalam undang-undang pemilu serta undang-undang pemilihan kepala daerah dan wakil kepala daerah. Tindak pidana pemilu ditangani oleh Bawaslu, Kepolisian dan Kejaksaan yang tergabung dalam forum/lembaga Penegakan Hukum Terpadu (Gakkumdu). Perkara tindak pidana pemilu diputus oleh pengadilan negeri, dan putusan ini dapat diajukan banding kepada pengadilan tinggi. Putusan pengadilan tinggi adalah putusan terakhir dan mengikat serta tidak dapat dilakukan upaya hukum lain."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "hasil_pemilu",
+      "patterns": [
+        "Bagaimana hasil pemilu diumumkan?",
+        "Hasil pemilu diumumkan"
+      ],
+      "responses": [
+        "Penetapan hasil pemilu diatur dengan ketentuan: KPU Kabupaten/Kota menetapkan hasil perolehan suara partai politik untuk calon anggota DPRD kabupaten/kota paling lambat 20 (dua puluh) hari setelah hari pemungutan suara, KPU Provinsi menetapkan hasil perolehan suara partai politik untuk calon anggota DPRD provinsi paling lambat 25 (dua puluh lima) hari setelah hari pemungutan suara, dan KPU menetapkan hasil Pemilu secara nasional dan hasil perolehan suara Pasangan Calon, perolehan suara partai politik untuk calon anggota DPR, dan perolehan suara untuk calon anggota DPD paling lambat 35 (tiga puluh lima) hari setelah hari pemungutan suara."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "perbedaaan_suara_sah_dan_tidak_sah",
+      "patterns": [
+        "Apa perbedaan antara suara sah dan suara tidak sah dalam pemilu?"
+      ],
+      "responses": [
+        "Surat suara pemilihan presiden dinyatakan sah apabila terdapat tanda coblos pada nomor urut, foto, nama salah satu pasangan calon, tanda gambar partai politik, dan/atau gabungan partai politik pengusung pasangan calon. Dengan demikian, jika tak ada tanda coblosan pada surat suara, atau terdapat coblosan di lebih dari satu kolom pasangan calon, atau coblosan terdapat di bagian lain surat suara (selain di bagian kolom salah satu pasangan calon), maka surat suara menjadi tidak sah."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "lokasi_tps",
+      "patterns": [
+        "Di mana tempat pemungutan suara (TPS) saya?",
+        "dmn kolasi tps",
+        "dimana tps saya",
+        "tps saya",
+        "Lokasi TPS saya?",
+        "TPS saya ada di mana?",
+        "Bagaimana cara mengetahui lokasi TPS saya?"
+      ],
+      "responses": [
+        "Untuk mengetahui lokasi TPS Anda, silakan cek di situs resmi KPU atau hubungi petugas KPU terdekat.",
+        "Lokasi TPS anda dapat dilihat di situs resmi KPU atau anda dapat menghubungi Kantor KPU setempat di daerah anda."
+      ],
+      "context": [""]
+    }
+  ]
+}

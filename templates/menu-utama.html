@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../static/css/my-style.css">
+  <link rel="stylesheet" href="../static/bootstrap-icons/font/bootstrap-icons.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-10">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 position-relative">
+              <div class="p-3 d-flex align-items-center sticky-top bg-white">
+                <img src="static/images/logo-web.png" alt="" id="logo-bot">
+                <p class="mb-0 ms-3 h3 fw-bold">SMARTKONSTITUEN</p>
+              </div>     
+            </div>
+     
+            <div class="col-12">
+              <div id="main-chat" class="row row-cols-2 g-3" style="margin-bottom: 100px;">
+                <div class="col bg-secondary rounded p-3 text-white">Hi, Selamat datang di SmartKonstituen</div>
+                <div class="col"></div>
+              </div>
+            </div>
+            
+            <div class="col-12">
+              <div class="position-fixed w-75" id="input-chat">
+                <form id="chat-form" class="msger-inputarea">
+                  <div class="input-group">
+                    <input type="text" class="form-control msger-input" id="message-input" placeholder="Ketik pesan...">
+                    <button class="input-group-text" type="submit"><i class="bi bi-send"></i></button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="sidebar position-fixed end-0 fb-bg-primary p-3 vh-100 d-flex flex-column justify-content-between">
+          <a class="text-white text-decoration-none px-5 py-2 border border-1 border-white rounded align-self-start cursor-pointer" onclick="clearConversation()">
+            <i class="bi bi-plus-circle me-1"></i>
+            Chat Baru
+          </a>
+          <div class="d-flex flex-column">
+            <div class="bg-white p-3 rounded">
+              <a href="#" class="fb-text-primary text-decoration-none mb-2" onclick="clearConversation()">
+                <i class="bi bi-trash"></i>
+                Clear conversations
+              </a>
+              <a href="{{ url_for('logout') }}" class="fb-text-primary text-decoration-none">
+                <i class="bi bi-box-arrow-right"></i>
+                Log out
+              </a>              
+            </div>
+            <hr class="border-white">
+            <div class="d-flex">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <script>
+    // Mendapatkan elemen-elemen yang diperlukan
+    const chatForm = document.getElementById('chat-form');
+    const messageInput = document.getElementById('message-input');
+    const userMessageContainer = document.querySelector('.user-message-container');
+    const chatbotMessageContainer = document.querySelector('.chatbot-message-container');
+    const mainChatContainer = document.querySelector('#main-chat');
+
+    function clearConversation() {
+      mainChatContainer.innerHTML = '';
+    }
+
+    // FullStack Ananda N email anandarahmawati025@gmail.com 
+  function logout() {
+    window.location.href = "/index.html";
+  }
+
+    const msgerForm = get('.msger-inputarea');
+      const msgerInput = get('.msger-input');
+      const msgerChat = get('#main-chat');
+
+      const BOT_IMG = 'https://cdn.technologyadvice.com/wp-content/uploads/2018/02/friendly-chatbot.jpg';
+      const PERSON_IMG = 'https://image.flaticon.com/icons/svg/145/145867.svg';
+      const BOT_NAME = '    ChatBot';
+      const PERSON_NAME = 'You';
+
+      msgerForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        const msgText = msgerInput.value;
+        if (!msgText) return;
+
+        appendMessage(PERSON_NAME, PERSON_IMG, 'right', msgText);
+        msgerInput.value = '';
+        botResponse(msgText);
+      });
+
+      function appendMessage(name, img, side, text) {
+
+        let msgHTML;
+
+        if(side === "right"){
+          msgHTML = `
+              <div class="col"></div>
+              <div class="col fb-bg-secondary rounded p-3">${text}</div>
+          `;
+        } else {
+          msgHTML = `
+              <div class="col bg-secondary rounded p-3 text-white">${text}</div>
+              <div class="col"></div>
+          `
+        }
+
+
+        msgerChat.insertAdjacentHTML('beforeend', msgHTML);
+        msgerChat.scrollTop += 500;
+      }
+
+      function botResponse(rawText) {
+        // Bot Response
+        $.get('/get', { msg: rawText }).done(function (data) {
+          console.log(rawText);
+          console.log(data);
+          const msgText = data;
+          appendMessage(BOT_NAME, BOT_IMG, 'left', msgText);
+        });
+      }
+
+      function get(selector, root = document) {
+        return root.querySelector(selector);
+      }
+
+      function formatDate(date) {
+        const h = '0' + date.getHours();
+        const m = '0' + date.getMinutes();
+
+        return `${h.slice(-2)}:${m.slice(-2)}`;
+      }
+  </script>
+</body>
+</html>
+<!-- FullStack Ananda N email anandarahmawati025@gmail.com -->

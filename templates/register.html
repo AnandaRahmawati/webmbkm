@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/my-style.css">
+    <link rel="stylesheet" href="static/bootstrap-icons/font/bootstrap-icons.min.css">
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=MADE TOMMY:wght@400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Arial:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row my-container">
+        <div class="col-sm-12 col-lg-6">
+          <div class="d-flex flex-column justify-content-between align-items-center h-75">
+            <div class="d-flex logo-mitra-register py-3">
+              <img class="img-fluid me-3" src="static/images/kampus-merdeka.png" alt="">
+              <img class="img-fluid me-3" src="static/images/amikomp.png" alt="">
+              <img class="img-fluid me-3" src="static/images/ISI.png" alt="">
+              <img class="img-fluid me-3" src="static/images/uad.png" alt="">
+              <img class="img-fluid me-3" src="static/images/amikomj.png" alt="">
+              <img class="img-fluid" src="static/images/orbit.png" alt="">
+            </div>
+            <div class="fb-text-primary d-flex flex-column align-items-center">
+              <div class="row">
+                <div class="col-4 col-lg-12 text-center">
+                  <img src="static/images/logo-web.png" alt="" id="logo" class="">
+                </div>
+                <div class="col-8 col-lg-12 justify-content-center d-flex flex-column text-center">
+                  <h1 class="fb-text-primary fw-bold mb-0">SmartKonstituen</h1>
+                  <p class="fb-text-primary mb-0">Pinta Memilih Pilihanmu</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-6 fb-bg-primary p-3">
+          <div class="form d-flex justify-content-center align-items-center h-100">
+            <form action="/login" method="post">
+                <p class="h3 fw-semibold text-white">Register</p>
+                <p class="text-white fw-light">Register untuk menikmati konten sesuai dengan <br> preferensi Anda dan dapatkan keuntungan lainnya.</p>
+                <div class="mb-4">
+                  <input type="text" class="form-control p-3" placeholder="Username">
+                </div>
+                <div class="mb-4">
+                  <input type="email" class="form-control p-3" placeholder="Email">
+                </div>
+                <div class="mb-4">
+                  <input type="password" class="form-control p-3" placeholder="Password">
+                </div>
+                <button type="button" class="btn btn-dark w-100 py-3 fw-semibold mb-3" onclick="window.location.href='/login'">Register</button>
+                <p class="text-center text-white">Sudah punya akun? <a href="{{ url_for('login') }}" class="fw-semibold text-white text-decoration-none">Login di sini</a></p>
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- FullStack Ananda N email anandarahmawati025@gmail.com -->

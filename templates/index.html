@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/my-style.css">
+    <link rel="stylesheet" href="static/bootstrap-icons/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=MADE TOMMY:wght@400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Arial:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="smart">
+        <h1>SmartKonstituen</h1>
+        <p>Pintar Memilih Pilihanmu</p>
+    </div>
+
+    <div class="merdeka" style="background-image: url(static/images/merdeka.png);     background-repeat: no-repeat;      background-size: cover;">
+        <div class="merdeka0">
+            <div class="merdekakiri">
+                <h1>PILIHLAH PILIHANMU DENGAN BIJAK</h1>
+                <p>Smart Konstituten adalah chatbot yang berfokus pada pemilu mulai dari waktu pelaksanaan, calon, tempat dan lain sebagainya. Guna memberikan informasi kepada masyarakat terhadap pemilu.</p>
+                <a href="{{ url_for('login') }}" class="fb-bg-primary rounded-pill text-white px-3 py-2 text-decoration-none cursor-pointer" id="btn-login"><i class="bi-person-fill me-3"></i>Masuk ke akun</a>
+            </div>
+            <div class="merdekakanan">
+                <img src="static/images/kampus-merdeka.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container content-landing" id="tutorial">
+      <div class="fb-text-primary"></div>
+        <h1 class="text-center my-5">LANGKAH PENGGUNAAN</h1>
+    </div>
+    <div class="row mb-2">
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <img
+              src="static/images/steps1.jpg"
+              class="img-thumbnail w-100"
+              alt="..."
+            />
+            <h5 class="card-title fw-bold text-center p-4">
+              Steps 1 : Click Login /Klik pada bagian “ Masuk Akun “
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <img
+              src="static/images/steps2.jpg"
+              class="img-thumbnail w-100"
+              alt="..."
+            />
+            <h5 class="card-title fw-bold text-center p-3">
+              Steps 2 : Register / Daftar Akun
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <img
+              src="static/images/steps3.jpg"
+              class="img-thumbnail w-100"
+              alt="..."
+            />
+            <h5 class="card-title fw-bold text-center p-3">
+              Steps 3 : Setelah dapat login, maka pengguna diarahkan pada menu chat
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <img
+              src="static/images/steps4.jpg"
+              class="img-thumbnail w-100"
+              alt="..."
+            />
+            <h5 class="card-title fw-bold text-center p-3">
+              Steps 4 : Typing Question / Ketikkan Pertanyaan
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <img
+              src="static/images/steps5.jpg"
+              class="img-thumbnail w-100"
+              alt="..."
+            />
+            <h5 class="card-title fw-bold text-center p-3">
+              Steps 5 : New Chat Room / Memulai Chat Baru
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="content-bawah p-5" id="penjelasan">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1>PENJELASAN CHATBOT</h1>
+  
+              <p>
+                Chatbot adalah program komputer yang dirancang untuk melakukan
+                interaksi dengan manusia melalui percakapan menggunakan antarmuka
+                yang mirip dengan manusia, seperti teks atau suara. Chatbot
+                menggunakan kecerdasan buatan (AI) untuk memahami dan merespons
+                masukan dari pengguna dengan cara yang relevan dan terstruktur.
+              </p>
+            </div>
+            <div class="col">
+              <img src="static/images/img-landing.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    <div id="tentang-kami" class="pendiri" style="background-image: url(static/images/pemandangan.png);     background-repeat: no-repeat;      background-size: cover;">
+        <h1>PENDIRI SMARTKONSTITUEN</h1>
+        <div class="pendiri0">
+            <div class="pendiri1">
+                <img src="static/images/pendiri1.jpeg" alt="">
+                <h1>DIVA ATH THAARIQ </h1>
+            </div>
+
+            <div class="pendiri1">
+                <img src="static/images/pendiri2.jpg" alt="">
+                <h1>MINGGES K</h1>
+            </div>
+
+            <div class="pendiri1">
+                <img src="static/images/pendiri3.jpeg" alt="">
+                <h1>ANANDA NUR RAHMAWATI</h1>
+            </div>
+
+            <div class="pendiri1">
+                <img src="static/images/pendiri4.png" alt="">
+                <h1>HILMI PUTRO UTOMO</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="univ">
+        <h1>KAMI DARI UNIVERSITAS BERIKUT INI </h1>
+        <div class="univ1">
+            <img class="univ2" src="static/images/Amikomp.png" alt="">
+            <img class="univ2" src="static/images/ISI.png" alt="">
+            <img class="univ2" src="static/images/uad.png" alt="">
+            <img class="univ2" src="static/images/amikomj.png" alt="">
+        </div>
+
+    </div>
+    <footer class="p-5">
+        <div class="row">
+          <div class="col">
+            <img src="static/images/kampus-merdeka.png" alt="" />
+          </div>
+          <div class="col">
+            <div class="kakikiri3">
+                <h4>ORBIT FUTURE ACADEMY AI MASTERY</h4>
+                <p>dvnrq7797@gmail.com</p>
+                <p>Jl. Arsadimeja, Sumampir, Purwokerto Selatan </p>
+                <p>mingges@gmail.com</p>
+                <p>Surakarta </p>
+                <p>anandarahmawatu025@gmail.com</p>
+                <p>Depok, Sleman, Yogyakarta </p>
+                <p>hilmi@gmail.com</p>
+                <p>Yogyakarta </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="kakikanan1">
+                <h4>Navigasi</h4>
+                <a href="#tentang-kami">Tentang Kami</a>
+                <a href="#penjelasan">Penjelasan</a>
+                <a href="#tutorial">Tutorial</a>
+                <a href="">Masuk</a>
+                <a href="">Daftar</a>
+            </div>
+          </div>
+        </div>
+        <p class="text-center text-white mt-2">Hak Cipta 2023 Kelompok Broyden 2</p>
+      </footer>
+</body>
+</html>
+<!-- FullStack Ananda N email anandarahmawati025@gmail.com -->
